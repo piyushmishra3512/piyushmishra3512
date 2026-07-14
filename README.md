@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="header.png" width="100%" alt="Header">
+  <img src="./header.svg" width="100%" alt="Header">
 </p>
 
 <p align="center">
@@ -171,5 +171,5 @@ goals_2027 = {
 ---
 
 <p align="center">
-  <img src="footer.png" width="100%" alt="Footer">
+  <img src="./footer.svg" width="100%" alt="Footer">
 </p>
