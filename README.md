@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="E:\my personal\piyushmishra3512" width="100%" alt="Piyush Mishra" />
+  <img src="header.png" width="100%" alt="Header">
 </p>
 
 <p align="center">
@@ -171,5 +171,5 @@ goals_2027 = {
 ---
 
 <p align="center">
-  <img src="E:\my personal\piyushmishra3512" width="100%" alt="footer" />
+  <img src="footer.png" width="100%" alt="Footer">
 </p>
