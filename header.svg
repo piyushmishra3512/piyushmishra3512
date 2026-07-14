@@ -1,0 +1,82 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0D2B"/>
+      <stop offset="50%" style="stop-color:#1a0533"/>
+      <stop offset="100%" style="stop-color:#0D0D2B"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="50%" style="stop-color:#C084FC"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" fill="url(#bg)"/>
+
+  <!-- Animated wave bottom -->
+  <path d="M0,160 C150,130 300,170 450,150 C600,130 750,160 900,145 L900,200 L0,200 Z" fill="#4B0082" opacity="0.5">
+    <animate attributeName="d"
+      values="M0,160 C150,130 300,170 450,150 C600,130 750,160 900,145 L900,200 L0,200 Z;
+              M0,150 C150,170 300,140 450,160 C600,175 750,145 900,155 L900,200 L0,200 Z;
+              M0,160 C150,130 300,170 450,150 C600,130 750,160 900,145 L900,200 L0,200 Z"
+      dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,170 C200,150 400,180 600,160 C750,145 850,165 900,158 L900,200 L0,200 Z" fill="#1a0533" opacity="0.7">
+    <animate attributeName="d"
+      values="M0,170 C200,150 400,180 600,160 C750,145 850,165 900,158 L900,200 L0,200 Z;
+              M0,165 C200,180 400,155 600,170 C750,160 850,150 900,162 L900,200 L0,200 Z;
+              M0,170 C200,150 400,180 600,160 C750,145 850,165 900,158 L900,200 L0,200 Z"
+      dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Floating stars -->
+  <circle cx="80" cy="40" r="1.5" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="25" r="1" fill="#C084FC" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="720" cy="30" r="1.5" fill="#FFD700" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="50" r="1" fill="#C084FC" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="20" r="1.5" fill="#FFD700" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="45" r="1" fill="#C084FC" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="15" r="1.5" fill="#FFD700" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main name -->
+  <text x="450" y="85" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="900"
+    text-anchor="middle" fill="url(#textGrad)" filter="url(#glow)" letter-spacing="3">
+    Piyush Mishra
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="120" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="400"
+    text-anchor="middle" fill="#C084FC" letter-spacing="1" opacity="0.9">
+    AI/ML &amp; DSA Grinder · B.Tech CSE · AITH Kanpur
+  </text>
+
+  <!-- Tagline -->
+  <text x="450" y="148" font-family="'Courier New', monospace" font-size="12"
+    text-anchor="middle" fill="#FFD700" opacity="0.7" letter-spacing="2">
+    &lt; Building Skills Daily. No Excuses. /&gt;
+  </text>
+</svg>
